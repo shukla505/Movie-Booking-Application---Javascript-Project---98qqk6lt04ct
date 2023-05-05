@@ -342,6 +342,7 @@ function getColor(vote) {
     }else{
         return 'red'
     }
+    
 }
 
 form.addEventListener('submit', (e) => {
@@ -351,7 +352,7 @@ form.addEventListener('submit', (e) => {
     selectedGenre=[];
     setGenre();
     if(searchTerm) {
-        getMovies(searchURL+'&query='+searchTerm)
+        getMovies(searchURL+'&query='+searchTerm    )
     }else{
         getMovies(API_URL);
     }
